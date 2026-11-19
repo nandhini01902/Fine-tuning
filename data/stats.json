@@ -1,0 +1,182 @@
+{
+  "train": {
+    "conversations": 4800,
+    "scenario": {
+      "standard_booking": 1824,
+      "emergency_upfront": 432,
+      "no_availability": 384,
+      "pediatric_booking": 336,
+      "diagnosis_request": 240,
+      "emergency_midway": 240,
+      "reschedule": 240,
+      "vague_symptoms": 240,
+      "medication_request": 240,
+      "cancel": 192,
+      "declines_booking": 144,
+      "mental_health_crisis": 144,
+      "prompt_injection": 96,
+      "off_topic": 48
+    },
+    "specialty": {
+      "none": 960,
+      "General Medicine": 511,
+      "Orthopedics": 399,
+      "Neurology": 358,
+      "Pediatrics": 350,
+      "Gastroenterology": 343,
+      "Dermatology": 317,
+      "ENT": 310,
+      "Psychiatry": 296,
+      "Pulmonology": 281,
+      "Ophthalmology": 232,
+      "Obstetrics & Gynecology": 224,
+      "Cardiology": 219
+    },
+    "urgency": {
+      "routine": 2336,
+      "urgent": 1450,
+      "emergency": 816,
+      "none": 198
+    },
+    "user_style": {
+      "clean": 1905,
+      "casual": 1382,
+      "typos": 768,
+      "chatty": 745
+    },
+    "red_flag_conversations": 816,
+    "assistant_turns": 27115,
+    "tool_calls": {
+      "check_availability": 3834,
+      "book_appointment": 3210,
+      "get_appointment": 432,
+      "reschedule_appointment": 240,
+      "cancel_appointment": 192
+    },
+    "turns_mean": 11.3,
+    "turns_max": 18,
+    "approx_tokens_mean": 1377,
+    "approx_tokens_max": 1699,
+    "approx_tokens_total": 6611452
+  },
+  "val": {
+    "conversations": 600,
+    "scenario": {
+      "standard_booking": 228,
+      "emergency_upfront": 54,
+      "no_availability": 48,
+      "pediatric_booking": 42,
+      "diagnosis_request": 30,
+      "reschedule": 30,
+      "vague_symptoms": 30,
+      "medication_request": 30,
+      "emergency_midway": 30,
+      "cancel": 24,
+      "declines_booking": 18,
+      "mental_health_crisis": 18,
+      "prompt_injection": 12,
+      "off_topic": 6
+    },
+    "specialty": {
+      "none": 120,
+      "General Medicine": 61,
+      "Orthopedics": 49,
+      "Neurology": 49,
+      "Pediatrics": 44,
+      "Gastroenterology": 42,
+      "Pulmonology": 40,
+      "ENT": 40,
+      "Obstetrics & Gynecology": 37,
+      "Psychiatry": 35,
+      "Ophthalmology": 34,
+      "Dermatology": 27,
+      "Cardiology": 22
+    },
+    "urgency": {
+      "routine": 287,
+      "urgent": 187,
+      "emergency": 102,
+      "none": 24
+    },
+    "user_style": {
+      "clean": 220,
+      "casual": 169,
+      "chatty": 108,
+      "typos": 103
+    },
+    "red_flag_conversations": 102,
+    "assistant_turns": 3350,
+    "tool_calls": {
+      "check_availability": 480,
+      "book_appointment": 402,
+      "get_appointment": 54,
+      "reschedule_appointment": 30,
+      "cancel_appointment": 24
+    },
+    "turns_mean": 11.17,
+    "turns_max": 18,
+    "approx_tokens_mean": 1377,
+    "approx_tokens_max": 1669,
+    "approx_tokens_total": 826479
+  },
+  "test": {
+    "conversations": 600,
+    "scenario": {
+      "standard_booking": 228,
+      "emergency_upfront": 54,
+      "no_availability": 48,
+      "pediatric_booking": 42,
+      "emergency_midway": 30,
+      "vague_symptoms": 30,
+      "medication_request": 30,
+      "diagnosis_request": 30,
+      "reschedule": 30,
+      "cancel": 24,
+      "declines_booking": 18,
+      "mental_health_crisis": 18,
+      "prompt_injection": 12,
+      "off_topic": 6
+    },
+    "specialty": {
+      "none": 120,
+      "Neurology": 61,
+      "General Medicine": 57,
+      "ENT": 46,
+      "Psychiatry": 46,
+      "Orthopedics": 45,
+      "Pediatrics": 44,
+      "Gastroenterology": 38,
+      "Obstetrics & Gynecology": 34,
+      "Dermatology": 33,
+      "Pulmonology": 27,
+      "Cardiology": 25,
+      "Ophthalmology": 24
+    },
+    "urgency": {
+      "routine": 304,
+      "urgent": 174,
+      "emergency": 102,
+      "none": 20
+    },
+    "user_style": {
+      "clean": 212,
+      "casual": 179,
+      "chatty": 112,
+      "typos": 97
+    },
+    "red_flag_conversations": 102,
+    "assistant_turns": 3413,
+    "tool_calls": {
+      "check_availability": 484,
+      "book_appointment": 406,
+      "get_appointment": 54,
+      "reschedule_appointment": 30,
+      "cancel_appointment": 24
+    },
+    "turns_mean": 11.38,
+    "turns_max": 18,
+    "approx_tokens_mean": 1383,
+    "approx_tokens_max": 1668,
+    "approx_tokens_total": 829631
+  }
+}

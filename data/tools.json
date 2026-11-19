@@ -1,0 +1,190 @@
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "check_availability",
+      "description": "Find open appointment slots for a specialty within a date range.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "specialty": {
+            "type": "string",
+            "enum": [
+              "General Medicine",
+              "Cardiology",
+              "Orthopedics",
+              "Dermatology",
+              "ENT",
+              "Gastroenterology",
+              "Neurology",
+              "Pulmonology",
+              "Ophthalmology",
+              "Obstetrics & Gynecology",
+              "Pediatrics",
+              "Psychiatry"
+            ]
+          },
+          "urgency": {
+            "type": "string",
+            "enum": [
+              "urgent",
+              "routine"
+            ]
+          },
+          "date_from": {
+            "type": "string",
+            "description": "YYYY-MM-DD"
+          },
+          "date_to": {
+            "type": "string",
+            "description": "YYYY-MM-DD"
+          },
+          "time_of_day": {
+            "type": "string",
+            "enum": [
+              "morning",
+              "afternoon",
+              "evening",
+              "any"
+            ]
+          },
+          "location": {
+            "type": "string",
+            "enum": [
+              "Downtown",
+              "Northside",
+              "Westfield",
+              "any"
+            ]
+          }
+        },
+        "required": [
+          "specialty",
+          "urgency",
+          "date_from",
+          "date_to",
+          "time_of_day",
+          "location"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "book_appointment",
+      "description": "Book a slot returned by check_availability.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "slot_id": {
+            "type": "string"
+          },
+          "patient_name": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "string"
+          },
+          "specialty": {
+            "type": "string",
+            "enum": [
+              "General Medicine",
+              "Cardiology",
+              "Orthopedics",
+              "Dermatology",
+              "ENT",
+              "Gastroenterology",
+              "Neurology",
+              "Pulmonology",
+              "Ophthalmology",
+              "Obstetrics & Gynecology",
+              "Pediatrics",
+              "Psychiatry"
+            ]
+          },
+          "urgency": {
+            "type": "string",
+            "enum": [
+              "urgent",
+              "routine"
+            ]
+          },
+          "reason": {
+            "type": "string",
+            "description": "Short reason for the visit, in plain words"
+          }
+        },
+        "required": [
+          "slot_id",
+          "patient_name",
+          "phone",
+          "specialty",
+          "urgency",
+          "reason"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "get_appointment",
+      "description": "Look up an existing appointment by its ID.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "appointment_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "appointment_id"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "reschedule_appointment",
+      "description": "Move an existing appointment to a new slot returned by check_availability.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "appointment_id": {
+            "type": "string"
+          },
+          "new_slot_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "appointment_id",
+          "new_slot_id"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "cancel_appointment",
+      "description": "Cancel an existing appointment.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "appointment_id": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "appointment_id"
+        ]
+      }
+    }
+  }
+]
