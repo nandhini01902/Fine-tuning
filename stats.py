@@ -32,3 +32,5 @@ tax = {"specialties": SPECIALTIES, "locations": LOCATIONS,
 json.dump(tax, open("data/taxonomy.json", "w"), indent=2, ensure_ascii=False)
 print(json.dumps({s: {k: v for k, v in out[s].items() if k not in ("specialty", "user_style")} for s in out}, indent=1))
 print(out["train"]["specialty"])
+
+https://chatgpt.com/c/6afebddc-fd34-83ec-ac50-f4729ef1dfb6
