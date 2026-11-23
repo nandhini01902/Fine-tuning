@@ -10,4 +10,4 @@
 - Regenerate: `python generate.py && python validate.py && python stats.py` (seeded, deterministic).
 
 
-https://chatgpt.com/share/6b041b26-a744-83ee-9d5a-522b72fe71ca
+https://chatgpt.com/share/6b041ed6-a48c-83ee-8925-3eb3b8c3b228
