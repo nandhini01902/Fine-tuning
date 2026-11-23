@@ -8,3 +8,6 @@
 - Test split is held out: unseen symptom phrasings, unseen prompts, and a later date range.
 - `data/taxonomy.json`: symptom → specialty → urgency table used to generate the data. **Needs clinician review.**
 - Regenerate: `python generate.py && python validate.py && python stats.py` (seeded, deterministic).
+
+
+https://chatgpt.com/share/6b041b26-a744-83ee-9d5a-522b72fe71ca
