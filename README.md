@@ -11,3 +11,4 @@
 
 
 https://chatgpt.com/share/6b041ed6-a48c-83ee-8925-3eb3b8c3b228
+https://chatgpt.com/share/6b057601-89d0-83ee-871e-bf02ca5bfaf4
